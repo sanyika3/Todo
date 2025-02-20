@@ -1,0 +1,58 @@
+.CurrentTodo{
+    background-color: #B4E5FC;
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    word-wrap: break-word;  /* Ha egy szó túl hosszú, törje meg */
+}
+.Todo{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: grab;
+}
+hr{
+    width: 80%;
+}
+.KanbanBoard {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+  }
+  
+  .Column {
+    width: 30%;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    min-height: 300px;
+    margin-right: 20px;
+  }
+.titleBlock{
+  display: block;
+  text-align: center;
+}
+#Not_Started .CurrentTodo {
+  background-color: #ff9999;
+}
+
+#In_Progress .CurrentTodo {
+  background-color: #ffdd57;
+}
+
+#Done .CurrentTodo {
+  background-color: #99ff99;
+}
+.deleteButton {
+  background: none;  
+  border: none;   
+  background-color: darkgray;
+  border-radius: 50%;
+  font-size: larger;
+  cursor: pointer;
+  margin-top: 20px;
+}

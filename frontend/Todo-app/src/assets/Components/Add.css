@@ -1,0 +1,39 @@
+.addContainer{
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Add{ 
+    padding: 20px;
+    background-color: #FFFFFF;
+}
+.Add form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+label {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+}
+input, textarea {
+    padding: 5px;
+    width: 100%;
+}
+.name{
+    width: 120px;
+}
+.btnAdd{
+    border-radius: 20px;
+    background-color: #5BAF50;
+    border: none;
+    height: 30px;
+    color: white;
+}
+.btnAdd:hover{
+    background-color: #56e066;
+}
