@@ -16,6 +16,9 @@ pip install -r requirements.txt
 ```  
 ```bash
 cd frontend 
+```
+```bash
+cd Todo-app 
 ```   
 ```bash
 npm install 
