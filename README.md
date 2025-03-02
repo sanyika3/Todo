@@ -1,4 +1,4 @@
-# To Do, Kanban Board
+# To Do, Kanban Board (Fejlesztés alatt)
 
 Ez a Kanban board lehetővé teszi a feladatok egyszerű kezelését és nyomon követését. A feladatokat az egyik oszlopból a másikba húzással (drag and drop) mozoghatod át, hogy tükrözd a feladatok állapotát. Az egér segítségével könnyedén átmozgathatod a feladatokat a különböző státuszok között, mint például: To Do, In Progress, Done.
 
@@ -26,6 +26,9 @@ npm install
 ```bash
 npm run build 
 ``` 
+```bash
+cd.. 
+```
 ```bash
 cd.. 
 ```
