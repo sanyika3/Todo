@@ -38,7 +38,7 @@ def AddTasks(request):
             description=_description,
             status=_status,
             priority=_priority,
-            assigned_to=request.user,
+            #assigned_to=request.user,
         )
         task.save()
         return Response({'message': 'Created'}, status=status.HTTP_201_CREATED)
