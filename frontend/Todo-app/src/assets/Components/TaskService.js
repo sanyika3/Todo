@@ -4,7 +4,7 @@ import axios from "axios";
 
 export const getTasks = async () => {
   try {
-    const response = await axios.get(`$${import.meta.env.VITE_BACKEND_URL}/allTasks`);
+    const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/allTasks`);
     return response.data;
   } catch (error) {
     console.error("Error fetching tasks:", error);
