@@ -23,7 +23,7 @@ function Add() {
 
     try {
       const response = await axios.post(
-        `${import.meta.env.VITE_BACKEND_URL}/addTasks`,
+        "https://todo-backend-j563.onrender.com/addTasks",
         formData,
         {
           headers: {
