@@ -83,7 +83,7 @@ export default Todo;*/
 import "./Todo.css";
 import { DragDropContext } from "@hello-pangea/dnd";
 import TaskColumn from "./TaskColumn";
-import { useTasks } from "./useTasks";
+import { useTasks } from "./UseTasks";
 import { deleteTask as apiDeleteTask } from "./TaskService";
 
 function Todo() {
