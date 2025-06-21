@@ -1,10 +1,10 @@
 import axios from "axios";
 
-const BASE_URL = "http://127.0.0.1:8000";
+//const BASE_URL = "http://127.0.0.1:8000";
 
 export const getTasks = async () => {
   try {
-    const response = await axios.get(`${BASE_URL}/allTasks`);
+    const response = await axios.get(`$${import.meta.env.VITE_BACKEND_URL}/allTasks`);
     return response.data;
   } catch (error) {
     console.error("Error fetching tasks:", error);
@@ -14,7 +14,7 @@ export const getTasks = async () => {
 
 export const deleteTask = async (taskId) => {
   try {
-    await axios.delete(`${BASE_URL}/deleteTask/${taskId}`, {
+    await axios.delete(`${import.meta.env.VITE_BACKEND_URL}/deleteTask/${taskId}`, {
       headers: {
         "Content-Type": "application/json",
         "X-CSRFToken": document.cookie.match(/csrftoken=([^;]+)/)?.[1] || "",

@@ -23,7 +23,7 @@ function Add() {
 
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8000/addTasks",
+        `${import.meta.env.VITE_BACKEND_URL}/addTasks`,
         formData,
         {
           headers: {
