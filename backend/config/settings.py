@@ -81,7 +81,7 @@ import dj_database_url
 
 DATABASES = {
     'default': dj_database_url.config(
-    default='postgres://admin1997:bQiiXOzhSZSOTQvQNTVwAK0A2OIRL681@dpg-d1bu10odl3ps73f27760-a.eu-central-1.render.com:5432/KanalSandor',
+    default='postgresql://admin1997:bQiiXOzhSZSOTQvQNTVwAK0A2OIRL681@dpg-d1bu10odl3ps73f27760-a.frankfurt-postgres.render.com/todo_d2j1',
     conn_max_age=600,
     ssl_require=True
 )
@@ -136,6 +136,6 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-#CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = True
 
-CORS_ALLOWED_ORIGINS = ['https://todo-2sx7.onrender.com']
+#CORS_ALLOWED_ORIGINS = ['https://todo-2sx7.onrender.com']
